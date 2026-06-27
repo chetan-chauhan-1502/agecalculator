@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed, #9333ea);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 550px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.card h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #6d28d9;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.3);
+}
+
+.results {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 20px;
+  border-radius: 18px;
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.box span {
+  font-size: 15px;
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 450px;
+    padding: 30px;
+  }
+
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 20px;
+  }
+
+  .card h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  input,
+  button {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .results {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .box {
+    padding: 18px;
+  }
+
+  .box h2 {
+    font-size: 1.6rem;
+  }
+
+  .box span {
+    font-size: 14px;
+  }
+}
