@@ -114,6 +114,7 @@ const App = () => {
           <input
             type="date"
             className="date-picker"
+            placeholder="dd-mm-yyyy"
             value={dateValue}
             max={maxDate}
             onChange={handleDatePicker}
